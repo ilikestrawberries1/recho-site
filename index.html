@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Recho — Real Places. Real People.</title>
+<title>Roamie — Real Places. Real People.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -334,7 +334,7 @@ footer { background:var(--forest); padding:36px 36px; display:flex; align-items:
 
 <!-- NAV -->
 <nav id="mainNav">
-  <a class="logo" href="#">recho <em class="logo-star">✦</em></a>
+  <a class="logo" href="#">roamie <em class="logo-star">✦</em></a>
   <div class="nav-tabs">
     <button class="ntab active" onclick="showView('discover',this)">Discover</button>
     <button class="ntab" onclick="showView('feed',this)">Feed</button>
@@ -504,7 +504,7 @@ footer { background:var(--forest); padding:36px 36px; display:flex; align-items:
   <div class="footer-links">
     <a href="#">About</a><a href="#">For Business</a><a href="#">Privacy</a><a href="#">Help</a>
   </div>
-  <div class="footer-copy">© 2025 Recho Inc.</div>
+  <div class="footer-copy">© 2025 Roamie Inc.</div>
 </footer>
 
 <!-- MODAL -->
@@ -912,7 +912,7 @@ function openOnboarding(){
   wizardStep=0;
   document.getElementById('modalInner').innerHTML=`
     <div class="modal-body" style="padding-top:32px">
-      <div style="font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--charcoal);margin-bottom:6px">Welcome to recho ✦</div>
+      <div style="font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--charcoal);margin-bottom:6px">Welcome to roamie ✦</div>
       <p style="font-size:13px;color:var(--muted);margin-bottom:24px;line-height:1.7;font-family:'Syne',sans-serif">Let's set up your profile so we can tailor recommendations just for you. Takes 60 seconds.</p>
       <div class="wizard-progress" id="wizardDots">${Array(wizardTotal).fill(0).map((_,i)=>`<div class="wp-dot" id="wdot${i}"></div>`).join('')}</div>
       <div id="wizardContent"></div>
@@ -923,7 +923,7 @@ function openOnboarding(){
 }
 
 const wizardSteps=[
-  { title:'Why are you using Recho?', content:`<div class="choice-grid">
+  { title:'Why are you using Roamie?', content:`<div class="choice-grid">
       <button class="choice-btn" onclick="this.parentNode.querySelectorAll('.choice-btn').forEach(b=>b.classList.remove('selected'));this.classList.add('selected')"><span class="cb-icon">✈️</span><span class="cb-label">Travel planning</span><span class="cb-sub">Finding spots before I arrive</span></button>
       <button class="choice-btn" onclick="this.parentNode.querySelectorAll('.choice-btn').forEach(b=>b.classList.remove('selected'));this.classList.add('selected')"><span class="cb-icon">🏠</span><span class="cb-label">Local discovery</span><span class="cb-sub">Exploring my own city</span></button>
       <button class="choice-btn" onclick="this.parentNode.querySelectorAll('.choice-btn').forEach(b=>b.classList.remove('selected'));this.classList.add('selected')"><span class="cb-icon">📖</span><span class="cb-label">Keep a diary</span><span class="cb-sub">Documenting my experiences</span></button>
